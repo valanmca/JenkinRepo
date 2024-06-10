@@ -13,7 +13,7 @@ public class MyControllerTest {
 	public void testSayWelcome1() {
 		MyController cont = new MyController();
 		ModelAndView actual =  cont.sayWelcome();
-		assertNotNull(actual);
+		assertNotNull("Object Test : Success",actual);
 	}
 	
 	@Test
@@ -22,7 +22,7 @@ public class MyControllerTest {
 		ModelAndView mv =  cont.sayWelcome();
 		String actual = mv.getViewName();
 		String expected = "Welcome";
-		assertEquals(expected, actual);
+		assertEquals("View Name Test Success",expected, actual);
 	}
 
 }
